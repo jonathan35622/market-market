@@ -9,6 +9,8 @@ import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {
+
+    /**creamos método que devuelve una categoría*/
     @Mappings({
             @Mapping(source = "idCategoria", target = "categoryId"),
             @Mapping(source = "descripcion", target = "category"),
